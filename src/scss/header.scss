@@ -1,0 +1,95 @@
+.app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .locations {
+        margin-left: 1rem;
+    }
+    .add-location {
+        background-color: #2a5d8e;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+}
+.item {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item:nth-child(3) {
+    justify-content: flex-end;
+}
+.item:nth-last-child(1) {
+    justify-content: flex-end;
+}
+
+.list-header.mt{
+    margin-top: 4rem;
+}
+.list-header {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    .list-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1rem;
+        box-shadow: 5px 6px 12px rgba(52, 68, 68, 0.18);
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        .item:nth-child(1) {
+            span {
+                padding-left: 2.5rem;
+            }
+        }
+    }
+    .location-list-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.6rem 1rem;
+        box-shadow: 5px 6px 12px rgba(52, 68, 68, 0.18);
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+
+        .number-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .number-of-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                background-color: #2a5d8e;
+                margin-right: 1.1rem;
+                height: 23px;
+                width: 23px;
+                border-radius: 15px;
+            }
+        }
+        .fa {
+            font-size: 1.1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        .fa-pencil {
+            color: #f6b543;
+        }
+        .fa-trash {
+            color: #ee7165;
+        }
+    }
+}

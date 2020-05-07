@@ -1,0 +1,190 @@
+.add-locaton,
+.facility-time-modal {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f1f3;
+    .facility-time-card {
+        width: 90vh;
+        box-shadow: 5px 6px 12px rgba(52, 68, 68, 0.18);
+        background: #fff;
+        padding: 1rem;
+    }
+    .add-location-card {
+        box-shadow: 5px 6px 12px rgba(52, 68, 68, 0.18);
+        width: 80vh;
+        background: #fff;
+        padding: 1rem;
+        .row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            .location-name {
+                width: 100%;
+            }
+            .select-state {
+            }
+            .location-lable {
+                font-size: 0.85rem;
+                margin-bottom: 8px;
+            }
+            .timer-zone-picker-wrapper {
+                border-bottom: 1px solid #80808085;
+                .location-time-zone-picker {
+                    width: 100%;
+                    input {
+                        outline: none;
+                        border: unset;
+                        font-size: 0.85rem;
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .usa-state-select {
+            outline: none;
+        }
+        .row.main {
+            margin-top: 1.2rem;
+        }
+        .input-wrapper {
+            width: 45%;
+        }
+    }
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .btn {
+            padding: 0.6rem 1.3rem;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .save-btn {
+            background-color: #2a5d8e;
+        }
+        .cancel-btn {
+            background-color: #ef675d;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.generic-text-input {
+    .lable {
+        font-size: 0.85rem;
+    }
+    .text-input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #80808085;
+        width: 100%;
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+    }
+    .error {
+        font-size: 0.8rem;
+        color: red;
+        position: absolute;
+    }
+    .text-input:focus {
+        border-bottom: 2px solid #2a5d8e;
+    }
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    .state-item {
+        cursor: pointer;
+    }
+}
+ul.dropdown {
+    width: 129px;
+    max-height: 28vh;
+    overflow: scroll;
+    border: 1px solid #f2f2f2;
+    li {
+        color: #0000009c;
+        padding: 0.5rem 0.5rem;
+    }
+    li:hover {
+        background-color: #8080809e;
+        color: #fff;
+    }
+}
+ul li {
+    position: relative;
+    font-size: 0.885em;
+    text-align: left;
+}
+ul li ul.dropdown {
+    min-width: 100%;
+    background: #fff;
+    display: none;
+    position: absolute;
+    z-index: 50;
+    left: 0;
+}
+ul li ul.dropdown.show {
+    display: block;
+}
+ul li ul.dropdown.hide {
+    display: none;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+.add-location-modal-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.loader-nolocation-continer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .no-added-location {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .kindly-add {
+               font-size: 1.2rem;
+               margin:.5rem 0;
+            }
+            .not-added {
+                font-size: 0.85rem;
+               opacity: .7;
+            }
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    box-shadow: 5px 6px 12px rgba(52, 68, 68, 0.18);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+    .select-pages-wrapper {
+        border-bottom: 1px solid #80808085;
+        .select-pages {
+            outline: none;
+            border: none;
+            background: none;
+            width: 50px;
+            // border-bottom: 1px solid;
+            // border-radius: unset;
+            option {
+                // margin-right: 50px;
+            }
+        }
+    }
+    .main-item:nth-child(2) {
+        margin: 0 3rem;
+    }
+    .item-per-page-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .arrow-keys-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i {
+            font-size: 1rem;
+        }
+        div {
+            margin-right: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
